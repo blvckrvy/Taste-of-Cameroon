@@ -1,4 +1,5 @@
 USER MANUAL
+
 Introduction
 Welcome to the Taste of Cameroon official website. This platform allows visitors to explore our menu, reserve a table, contact us, order from us through third party sites, and learn more about us and our services.
 
