@@ -1,0 +1,55 @@
+<head>
+    <style>
+        .landscape-warning {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            background: black;
+            color: white;
+            font-size: 1.2rem;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            padding: 2em;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .landscape-warning.show {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="landscape-warning" id="landscape-warning">
+        Please rotate your device back to portrait mode
+    </div>
+
+    <script>
+        function isMobile() {
+            return /Android|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent);
+        }
+
+        function handleOrientationChange() {
+            const warning = document.getElementById("landscape-warning");
+
+            if (isMobile() && window.matchMedia("(orientation: landscape)").matches) {
+                warning.classList.add("show");
+                document.body.style.overflow = "hidden";
+            } else {
+                warning.classList.remove("show");
+                document.body.style.overflow = "";
+            }
+        }
+
+        // Run on page load
+        window.addEventListener("load", handleOrientationChange);
+
+        // Run on orientation change and resize (covers most devices)
+        window.addEventListener("orientationchange", handleOrientationChange);
+        window.addEventListener("resize", handleOrientationChange);
+    </script>
+</body>

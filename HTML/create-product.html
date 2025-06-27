@@ -1,0 +1,52 @@
+<div id="create-product-modal" class="modal">
+    <div class="modal-content">
+        <div class="cross-btn">
+            <i class="fa-solid close fa-xmark"></i>
+        </div>
+
+        <div id="modal-message">
+            <p>Create a new product</p>
+
+            <form class="form-product" method="POST" enctype="multipart/form-data">
+                <div class="input-container">
+                    <label>Name</label>
+                    <input class="name input-product" name="Iname" required />
+                </div>
+
+                <div class="text-input-product-container">
+                    <div class="input-container">
+                        <label>Category</label>
+                        <select class="category input-product" name="category" required>
+                            <option></option>
+                            <option value="Main Dishes">Main Dishes</option>
+                            <option value="Soups">Soups</option>
+                            <option value="Sides">Sides</option>
+                            <option value="Vegetarian">Vegetarian</option>
+                            <option value="Street">Street</option>
+                            <option value="Drinks">Drinks</option>
+                        </select>
+                    </div>
+
+                    <div class="input-container">
+                        <label>Price</label>
+                        <input class="price input-product" name="price" required />
+                    </div>
+                </div>
+
+                <div class="input-container">
+                    <label>Description</label>
+                    <textarea class="description desc-product input-product" name="description" required></textarea>
+                </div>
+
+                <div class="input-container">
+                    <label>Upload the image</label>
+                    <div class="input-file-container">
+                        <input class="image" name="image" type="file" accept="image/*" required />
+                    </div>
+                </div>
+
+                <button type="submit" class="create-product-btn">Create Product</button>
+            </form>
+        </div>
+    </div>
+</div>

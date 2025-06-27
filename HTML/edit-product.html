@@ -1,0 +1,53 @@
+<div id="edit-product-modal" class="edit-modal">
+    <div class="edit-modal-content">
+        <div class="cross-btn">
+            <i class="fa-solid close fa-xmark"></i>
+        </div>
+
+        <div id="modal-message">
+            <p>Edit product</p>
+
+            <form class="edit-form-product">
+                <div class="edit-input-container">
+                    <label>Name</label>
+                    <input class="edit-name edit-input-product" name="Iname" required />
+                </div>
+
+                <div class="text-edit-input-product-container">
+                    <div class="edit-input-container">
+                        <label>Category</label>
+                        <select class="edit-category edit-input-product" name="category" required>
+                            <option></option>
+                            <option value="Main Dishes">Main Dishes</option>
+                            <option value="Soups">Soups</option>
+                            <option value="Sides">Sides</option>
+                            <option value="Vegetarian">Vegetarian</option>
+                            <option value="Street">Street</option>
+                            <option value="Drinks">Drinks</option>
+                        </select>
+                    </div>
+
+                    <div class="edit-input-container">
+                        <label>Price</label>
+                        <input class="edit-price edit-input-product" name="price" required />
+                    </div>
+                </div>
+
+                <div class="edit-input-container">
+                    <label>Description</label>
+                    <textarea class="edit-description edit-desc-product edit-input-product" name="description"
+                        required></textarea>
+                </div>
+
+                <div class="edit-input-container">
+                    <label>Upload the image</label>
+                    <div class="preview-image"></div>
+                    <div class="edit-input-file-container">
+                        <input class="edit-image" name="image" type="file" accept="image/*" required />
+                    </div>
+                </div>
+                <button type="submit" class="edit-product-btn">Update Product</button>
+            </form>
+        </div>
+    </div>
+</div>

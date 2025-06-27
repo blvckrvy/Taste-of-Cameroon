@@ -1,0 +1,135 @@
+/* main styles */
+main {
+    padding: 5% 10%;
+}
+
+.book-container {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 4%;
+    border-bottom: 1px solid black;
+    padding-bottom: 2%;
+    font-size: 40px;
+    color: #0C865D;
+}
+
+.desc p {
+    padding: 0 15%;
+    font-weight: 600;
+    padding-bottom: 60px;
+}
+
+/* booking form styles */
+.form-content {
+    background-image: url('../Images/poulet-dg-flip.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    background-color: #FFF7E0;
+    margin: 1% auto;
+    width: 50%;
+    max-width: 700px;
+    border-radius: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    overflow: visible;
+    max-height: 100vh;
+}
+
+.form-shadow {
+    position: relative;
+    padding: 1rem;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 7px double grey;
+    border-radius: 20px;
+}
+
+.form-content h2 {
+    margin-bottom: 30px;
+    text-align: center;
+    color: #0fb67e;
+    border-bottom: 1px solid white;
+    padding-bottom: 3%;
+}
+
+.form-content label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: white;
+}
+
+.form-content input {
+    margin-bottom: 15px;
+    border: 1px solid grey;
+    font-size: 16px;
+    margin-top: 1%;
+    padding: 1.5%;
+    padding-left: 3%;
+    border-radius: 20;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.book {
+    background-color: #0C865D;
+    border: 1px solid grey;
+    font-size: 16px;
+    padding: 15px 0;
+    border-radius: 12px;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.3s ease;
+    color: white;
+    font-weight: bold;
+}
+
+.book:hover {
+    background-color: #0b704f;
+}
+
+.book:active {
+    background-color: #0C865D;
+    border-style: inset;
+}
+
+.flatpickr-calendar {
+    font-size: 12px;
+}
+
+.flatpickr-day.today {
+    background: #0C865D;
+    color: white;
+}
+
+/* ----------------------------------------- */
+
+/* media queries */
+@media screen and (max-width: 768px) {
+    main {
+        padding: 10% 5%;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .desc p {
+        padding: 2% 5%;
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .form-content {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .form-content {
+        width: 90%;
+    }
+}

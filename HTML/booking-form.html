@@ -1,0 +1,54 @@
+<div id="bookingform" class="form">
+    <form class="booking-product" method="POST" enctype="multipart/form-data">
+        <div class="form-content">
+            <div class="form-shadow">
+                <h2>
+                    <i class="fa-regular fa-calendar-days"></i>
+                    Book your table
+                </h2>
+                <form id="bookingForm">
+                    <div>
+                        <label>First Name:</label>
+                        <input type="text" class="firstName" name="fname" required />
+                    </div>
+
+                    <div>
+                        <label>Last Name:</label>
+                        <input type="text" class="lastName" name="lname" required />
+                    </div>
+
+                    <div>
+                        <label>Email:</label>
+                        <input type="email" class="email" name="email" required />
+                    </div>
+
+                    <div>
+                        <label>Phone:</label>
+                        <input type="tel" class="tel" name="tel" required />
+                    </div>
+
+                    <div>
+                        <label>Date:</label>
+                        <input type="date" class="date" name="date" required />
+                    </div>
+
+                    <div>
+                        <label>Time:</label>
+                        <input type="time" class="time" name="time" required />
+                    </div>
+
+                    <div>
+                        <label>Party Size:</label>
+                        <input type="number" class="partySize" name="partySize" min="1" placeholder="1" required />
+                    </div>
+
+                    <div>
+                        <button type="submit" class="book">BOOK</button>
+                    </div>
+
+                    <div id="availableResult" style="margin-top: 10px;"></div>
+                </form>
+            </div>
+        </div>
+    </form>
+</div>

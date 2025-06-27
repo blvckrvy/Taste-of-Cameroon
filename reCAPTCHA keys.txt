@@ -1,0 +1,9 @@
+reCAPTCHA keys
+
+Use this site key in your user-facing HTML code.
+
+	6Ld-IRMrAAAAAMN_FHPK7-dQ-q19r45PhuMY02MP
+
+Use this secret key for communication between your site and the reCAPTCHA service.
+
+	6Ld-IRMrAAAAABbdw75fG4v2H2qW1Gp3HSmrOZAF

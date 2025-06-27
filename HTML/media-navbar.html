@@ -1,0 +1,26 @@
+<body>
+    <div class="hamburger" onclick="toggleSidebar()">
+        <i class="fa fa-bars collapse-icon"></i>
+    </div>
+
+    <div class="sidebar">
+        <div class="close-btn" onclick="toggleSidebar()">
+            <i class="fas fa-times"></i>
+        </div>
+        <a href="menu.php">Menu</a>
+        <a href="book.php">Book Now</a>
+        <a href="order.php">Order Online</a>
+        <a href="about.php">About Us</a>
+        <a href="contact.php">Contact Us</a>
+    </div>
+
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            const hamburger = document.querySelector('.hamburger');
+
+            sidebar.classList.toggle('active');
+            hamburger.classList.toggle('hidden');
+        }
+    </script>
+</body>

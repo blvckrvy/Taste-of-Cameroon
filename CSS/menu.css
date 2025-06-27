@@ -1,0 +1,226 @@
+/* main styles */
+main {
+    padding: 5% 10%;
+}
+
+.menu-container {
+    margin-bottom: 10%;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 4%;
+    border-bottom: 1px solid black;
+    padding-bottom: 2%;
+    font-size: 40px;
+    color: #0C865D;
+}
+
+.desc p {
+    padding: 0 15%;
+    text-align: center;
+    margin-bottom: 5%;
+    font-weight: 600;
+}
+
+.menu-plan {
+    border-top: 4px double gray;
+    border-bottom: 4px double gray;
+    padding: 4% 0;
+}
+
+h2 {
+    margin-bottom: 4%;
+    text-align: center;
+    color: #0C865D;
+    font-size: 30px;
+}
+
+.button-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 0 15%;
+}
+
+.button-card button {
+    background-color: #FFF7E0;
+    color: black;
+    border: double;
+    padding: 20px 30px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.button-card button:hover {
+    background-color: #d2cbb6;
+}
+
+/* carousel styles */
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 90%;
+    margin: 50px auto;
+    border-radius: 15px;
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10%;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    text-align: center;
+    background-color: #FFF7E0;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.carousel-slide p {
+    padding: 10px;
+    font-weight: bold;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 30px;
+    opacity: 0.3;
+    transition: opacity 0.3s;
+}
+
+.carousel-btn:hover {
+    opacity: 1;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* reviews style */
+.reviews {
+    border-top: 4px double gray;
+    border-bottom: 4px double gray;
+    text-align: center;
+    padding: 4% 0;
+}
+
+.reviews h3 {
+    font-size: 32px;
+    color: #0C865D;
+    margin-bottom: 4%;
+}
+
+.reviews-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.reviews-card {
+    background-color: white;
+    border: 2px solid #0C865D;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.reviews-card:hover {
+    transform: translateY(-10px);
+}
+
+.reviews-card p {
+    font-style: italic;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.reviews-card h4 {
+    font-weight: bold;
+    color: goldenrod;
+    font-size: 14px;
+}
+
+/* ----------------------------------------- */
+
+/* media queries */
+@media screen and (max-width: 768px) {
+    main {
+        padding: 10% 5%;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .desc p {
+        padding: 0 5%;
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .button-grid {
+        padding: 0;
+        gap: 15px;
+    }
+
+    .button-card button {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+
+    .carousel {
+        width: 100%;
+    }
+
+    .carousel-slide img {
+        height: 250px;
+    }
+
+    .carousel-btn {
+        padding: 8px 12px;
+        font-size: 20px;
+    }
+
+    .reviews h3 {
+        font-size: 24px;
+    }
+
+    .reviews-card {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .reviews-card p {
+        font-size: 14px;
+    }
+
+    .reviews-card h4 {
+        font-size: 12px;
+    }
+}
